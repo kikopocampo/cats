@@ -8,7 +8,6 @@ const breedDetailsFromFile = function(breed, functionToRun) {
     // console.log("In readFile's Callback: it has the data.");
     if (!error) functionToRun(data);
     if (error) functionToRun(undefined);
-    // if you can't read anything, nothing happens.
   });
 };
 const runData = data => console.log('Return Value: ', data); // display funct.
